@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="thing.css">
+    <script src="script.js" defer></script>
+
+  </head>
+  <body>
+     <header>
+        <nav class="navbar">
+            <a href="../index.html"> Home </a>    
+            <a href="answers.html"> Saved inputs </a>
+        </nav>
+        <div>
+            <h1>
+                <img src="https://64.media.tumblr.com/4fcb543d7e5f95ca325093433a3f6d3e/657c3cbe8a071fb6-24/s75x75_c1/c32b06e0cc1659dd9126f97877fa4e470837c328.gif"> Club application form:     <img src="https://64.media.tumblr.com/4fcb543d7e5f95ca325093433a3f6d3e/657c3cbe8a071fb6-24/s75x75_c1/c32b06e0cc1659dd9126f97877fa4e470837c328.gif">
+            </h1>
+            <h3>by Avery Ababon </h3>
+        </div>
+
+    </header>
+    <section>
+      <form id="dForm" action="answers.html" method="get">
+        <fieldset>
+          <legend>JOIN A CLUB</legend><br/>
+          <label> Student ID: 
+            <input type="number" name="sid" id="sid" required />
+          </label><br/><br/>
+          <label> Full name:
+            <input type="text" name="fname" id="fname" required />
+          </label><br/><br/>
+          <label> Birthday:
+            <input type="date" name="dob" id="dob" />
+          </label><br/><br/>
+          <label> Email adress :
+            <input type="email" name="eadress" id="eadress" required/>
+          </label><br/><br/>
+          <label> Intern / Extern:
+            <input type="radio" name="iore" value="Intern" /> Intern
+            <input type="radio" name="iore" value="Extern" /> Extern
+          </label><br/><br/>
+          <label for="clubs"> Preferred Organization / Club</label>
+          <select name="clubs" id="clubs">
+            <option value="xyz">Pisay XYZ</option>
+            <option value="computron">Computron</option>
+            <option value="math">Math club</option>
+            <option value="solace">Solace</option>
+            <option value="baking">Baking club</option>
+          </select><br>
+          <br>
+          <label> Why do you want to join the club/organization? 
+            <br>
+            <textarea name="why" id="why">
+            </textarea>
+          </label><br/><br/>
+          
+          
+        </fieldset>  
+        <fieldset>
+          <legend>SUBMIT</legend>
+          <button type="submit"> Submit </button>
+          <input type="reset" value=" Clear " />
+        </fieldset> 
+      </form>
+    </section>
+    <script src="q3e3script.js"></script>
+
+<img src="https://64.media.tumblr.com/b728e5844cf08089688b6b7530187564/e48037d0145e5cdd-3f/s250x400/2aadf55f627397dcda0a676fbd84d736d205da34.pnj" width=350px; style="position: fixed; right: 0px; bottom: 0px;">
+  </body>
+</html>

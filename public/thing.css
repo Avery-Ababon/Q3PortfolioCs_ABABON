@@ -1,0 +1,52 @@
+h1{
+    color: rgb(105, 85, 73);
+}
+
+h3{
+    color: rgb(119, 87, 61);
+    font-style: italic;
+}
+
+body{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 15px;
+    margin: 35px;
+    background-image: url(https://i.pinimg.com/736x/c6/d3/1b/c6d31b60ac395820969aa00267f755ec.jpg);
+    background-size: 100%;
+}
+
+textarea{
+    width: 50%;
+    margin-top: 5px;
+    height: 50%;
+    border-radius: 10px;
+    border-color: rgb(119, 87, 61);
+}
+
+input{
+    margin-top: 5px;
+    height: 50%;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: rgb(119, 87, 61);
+}
+
+button{
+    width: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(119, 87, 61);
+    transition: transform .1s;
+    color:  rgb(119, 87, 61);
+}
+
+
+button:hover{
+    transform: scale(1.1);
+}
+
+fieldset{
+    background-color: rgb(255, 245, 247);
+    border-image: url('https://64.media.tumblr.com/4dc89cec46aac7f6e6f620031123affe/e3a02e58a5b271e4-19/s250x400/90dca42fccbd08d0b0948123803fe956edf46807.pnj') 9px fill;
+}
