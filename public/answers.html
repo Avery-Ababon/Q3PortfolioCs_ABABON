@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q3 2nd Graded Exercise">
+    <meta name="keywords" content="HTML Forms">
+    <meta name="author" content="AL Mendoza">
+    <title>Sample Form</title>
+    <!-- updated external css link to show how to share it between repository -->
+    <link rel="stylesheet" href="thing.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+     <header>
+        <div>
+            <h1>
+                all accounts:  
+            </h1>
+        </div>
+        <nav class="navbar">
+            <a href="../../index.html"> Home </a>
+            <a href="Q3_2GCesiumABABON_Avery.html"> Make account </a>
+        </nav>
+    </header>
+    <section>
+      <h1 class="title">account/s saved</h1>
+      <table id="results"> </table>
+      
+    </section>
+    <script>
+        let acctString = localStorage.getItem("accounts")
+        if (!acctString) { accountList = "N/A" } 
+        else {
+            
+            accountList = JSON.parse(acctString)    
+            rowString = "<tr><th>Student ID</th><th>Name</th><th>Birthday</th><th>Email</th><th>Intern/Extern</th><th>Club</th><th>Reason</th></tr>";
+            console.log(accountList)
+            for (let key in accountList) {
+                rowString += "<tr>";
+                rowString += "<td>" + key + "</td>";
+                rowString += "<td>" + accountList[key].sid + "</td>";
+                rowString += "<td>" + accountList[key].fname + "</td>";
+                rowString += "<td>" + accountList[key].dob + "</td>";
+                rowString += "<td>" + accountList[key].eadress + "</td>";
+                rowString += "<td>" + accountList[key].iore + "</td>";
+                rowString += "<td>" + accountList[key].why + "</td></tr>";
+            }
+        }
+        results.innerHTML = rowString;
+
+    </script>
+  </body>
+</html>
